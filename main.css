@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+
+/* Base style for the background containers*/
+.background {
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+/* Linking each backgrounds to their respective file*/
+#bg1 {
+  background-image: url(/screenshots/background1.jpg);
+}
+
+#bg2 {
+  background-image: url(screenshots/background2.jpg);
+}
+
+#bg3 {
+  background-image: url(screenshots/background3.jpg);
+}
+
+h1 {
+  color: white;
+  transform: translateZ(1000px);
+}
+
+.divider {
+  height: 3px;
+  background-color: #303030;
+}
