@@ -1,37 +1,91 @@
+/*Body Styling*/
+
 body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Questrial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background {
+  background-color: lightslategray;
+}
+
+header {
+  position: fixed;
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.title {
+  padding: 54px;
+  color: #F3948F;
+}
+
+.links {
+  margin: 54px;
+}
+
+.appy {
+  font-weight: inherit;
+  margin: 0 0 0.2em 0;
+}
+
+.eatery {
   margin: 0;
 }
 
-/* Base style for the background containers*/
-.background {
-  height: 100vh;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center
+.social {
+  margin-right: 18px;
+  text-decoration: none;
+  fill: #063A45;
 }
 
-/* Linking each backgrounds to their respective file*/
-#bg1 {
-  background-image: url(/screenshots/background1.jpg);
+.social:hover{
+  fill: #F3948F;
 }
 
-#bg2 {
-  background-image: url(screenshots/background2.jpg);
+
+.logo {
+  margin-bottom: 45px;
+  animation: spin 15s infinite linear;
+  transition: fill 0.2s ease;
+  fill: #063A45;
 }
 
-#bg3 {
-  background-image: url(screenshots/background3.jpg);
+.logo:hover{
+  fill: #F3948F;
 }
 
-h1 {
-  color: white;
-  transform: translateZ(1000px);
+.coming {
+    color: #063A45;
+    font-size: 18px;
+    letter-spacing: 3px;
 }
 
-.divider {
-  height: 3px;
-  background-color: #303030;
+/* Animations */
+
+@keyframes spin{
+  0%{
+    transform: rotateZ(0deg)
+  }
+  100%{
+    transform: rotateZ(360deg)
+  }
 }
+
