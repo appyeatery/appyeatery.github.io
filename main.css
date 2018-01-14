@@ -72,6 +72,11 @@ footer {
     color: #063A45;
     font-size: 18px;
     letter-spacing: 3px;
+    transition: color 0.2s ease;
+}
+
+.coming:hover {
+    color: #F3948F;
 }
 
 /* Animations */
