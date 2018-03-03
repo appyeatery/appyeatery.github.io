@@ -1,3 +1,8 @@
+/*Base Styling*/
+a:visited{
+  color: #F3948F;
+}
+
 /*Body Styling*/
 
 body {
@@ -69,14 +74,20 @@ footer {
 }
 
 .coming {
-    color: #063A45;
-    font-size: 18px;
-    letter-spacing: 3px;
-    transition: color 0.2s ease;
+  color: #063A45;
+  font-size: 18px;
+  letter-spacing: 3px;
+  transition: color 0.2s ease;
+  line-height: 33px;
+  text-align: center;
 }
 
 .coming:hover {
     color: #F3948F;
+}
+
+.coming > a{
+  font-size: 0.9em;
 }
 
 /* Animations */
