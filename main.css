@@ -1,4 +1,8 @@
 /*Base Styling*/
+a{
+  color: #063A45;
+}
+
 a:visited{
   color: #F3948F;
 }
